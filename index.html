@@ -4,21 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2008px-Google_%22G%22_Logo.svg.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Port+Lligat+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <title>Google | homepage</title>
+    <title>Google</title>
   </head>
   <body>
+<style>
 
+</style>
 
+    <!-- a little of js code -->
+    <script>
+      // document - This refers to the entire HTML document (html->body->head).
+      // setProperty() - This is a method to set a new CSS property (or update an existing one).
+
+      let changeBodyColor=(element)=> {
+          let className = element.className;
+          document.body.style.setProperty('--body-color', `${className}`);
+         
+        }
+      </script>
+        
+        
+        <!-- end -->
 
 
 
     <header class="left">
+      <ul style="align-items: center; height:50px !important;">
+        <li class="flex">
+          <span onclick="changeBodyColor(this)" class="brown">
+
+          </span>
+          <span onclick="changeBodyColor(this)" class="black">
+
+          </span>
+        </li>
+      </ul>
       <ul style="align-items: center;">
         <div class="far">
         <li>Gmail</li>
@@ -34,6 +63,7 @@
           />
         </li>
       </ul>
+     
     </header>
 
 
@@ -50,24 +80,25 @@
       <section>
         <div class="center-div">
           <div class="row-c1">
-            <h1 style="letter-spacing: 6px; margin: 0 !important">
-              <span style="color: #2263d9">G</span
-              ><span style="color: #a00004">o</span
-              ><span style="color: yellow">o</span
-              ><span style="color: #2263d9">g</span
-              ><span style="color: green">l</span
-              ><span style="color: #a00004">e</span>
+            <h1 style="margin:0">
+            <span style="font-size:88px!important;">G</span>oogle
             </h1>
           </div>
           <div class="row-c2" style="margin-top: 20px">
             <form method="get" class="first" action="https://www.google.com/search">
-              <input type="text" name="as_epq" id="" />
-              <i class="fa fa-search"></i>
+              <div>
+                <i class="fa fa-search"></i>
+                <input type="text" name="as_epq" id=""/>
+              </div>
+              <div>
+                <img  width="25px"  style="margin:4px;" src="images/lens.png" alt="" srcset="">
+                <img  width="25px" src="images/mic.png" alt="" srcset="">
+              </div>
             </form>
           </div>
           <div class="row-c3" style="margin-top: 30px">
             <form method="get" action="https://www.google.com/search">
-              <button name="btnI" type="submit">Google Search</button>
+              <button name="btnK" >Google Search</button>
               <button disabled>I'm Feeling Lucky!</button>
             </form>
           </div>
@@ -87,25 +118,27 @@
 
     
     <!-- start footer section -->
-    <footer style="background-color: #0e0d0e">
-      <div class="row">
-        <p>Palestine</p>
+    <footer style="background-color: #171717">
+      <div class="row" style="padding:3px;">
+        <p style="color:#bdc1c6">Palestine</p>
       </div>
       <div class="row-2">
-        <ul class="one">
-          <li>About</li>
-          <li>Advertising</li>
-          <li>Business</li>
-          <li>How Search Work</li>
+        <ul  class="one">
+          <li style="color:#bdc1c6">About</li>
+          <li style="color:#bdc1c6">Advertising</li>
+          <li style="color:#bdc1c6">Business</li>
+          <li style="color:#bdc1c6" >How Search Work</li>
         </ul>
         <ul class="two">
-          <li>Privacy</li>
-          <li>Terms</li>
-          <li>Settings</li>
+          <li style="color:#bdc1c6">Privacy</li>
+          <li style="color:#bdc1c6" >Terms</li>
+          <li style="color:#bdc1c6" >Settings</li>
         </ul>
       </div>
     </footer>
     <!-- end footer section -->
+
+
 
 
 
