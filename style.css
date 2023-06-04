@@ -46,6 +46,13 @@ header.left > ul > li {
 /* start footer styling */
 button{
   margin:10px;
+  border: 1px solid #ddd;
+  border-radius:3px;
+}
+button:hover{
+  cursor: pointer !important;
+
+
 }
 .row > p {
   margin-top: 0 !important;
@@ -112,7 +119,7 @@ section  .center-div  .row-c1 > h1 {
   justify-content: center;
   align-items: center;
 }
-form {
+form.first {
   width: 700px;
   display: flex;
   padding: 10px;
